@@ -196,7 +196,6 @@ class Car {
   #render(className) {
     const car = document.createElement('div');
     car.setAttribute('class', className);
-    car.textContent = 'Car';
     return car;
   }
 }

@@ -10,8 +10,14 @@ body {
 }
 .startScreen {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 60%;
+  top: 20%;
+  left: 20%;
+  background-color: cadetblue;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2rem;
+  padding: 20px;
 }
 .car {
   position: absolute;
@@ -19,15 +25,19 @@ body {
   height: 100px;
   bottom: 100px;
   background-color: aqua;
+  background-image: url('car.png');
+  background-size: cover;
   margin: auto;
   z-index: 10;
 }
 .score {
+  position: absolute;
   width: 100%;
   height: 60px;
   background-color: #000;
   text-align: center;
   color: #fff;
+  z-index: 100;
 }
 #gameArea {
   position: relative;
