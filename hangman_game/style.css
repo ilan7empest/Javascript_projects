@@ -1,0 +1,43 @@
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0;
+  max-width: 500px;
+}
+.letters .letter {
+  flex: 0 0 20px;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin: 3px;
+  cursor: pointer;
+  text-align: center;
+}
+.letters .letter:hover {
+  background-color: aqua;
+}
+.letters .letter.disabled {
+  background-color: #ccc;
+  cursor: default;
+  border-color: transparent;
+  opacity: 0.6;
+}
+.letters .letter.correct {
+  background-color: #00ac00;
+}
+.board .letter {
+  margin: 0 5px;
+  font-size: 40px;
+  min-width: 25px;
+  min-height: 50px;
+  position: relative;
+}
+.board .letter::after {
+  content: '';
+  border-bottom: 2px solid #000;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

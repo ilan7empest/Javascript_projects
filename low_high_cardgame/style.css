@@ -1,0 +1,32 @@
+#game {
+  padding: 10px;
+}
+#deck {
+  position: relative;
+}
+.hide {
+  display: none;
+}
+.card {
+  width: 70px;
+  height: 90px;
+  font-size: 30px;
+  padding: 5px;
+  background-color: rgb(255, 245, 245);
+  border: 1px solid #000;
+  border-radius: 5px;
+  box-shadow: 5px 10px #333;
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+.card.diams,
+.card.hearts {
+  color: red;
+}
+.card i {
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  margin-top: -10px;
+}

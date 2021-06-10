@@ -1,0 +1,48 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.hide {
+  display: none;
+}
+.startScreen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.car {
+  position: absolute;
+  width: 50px;
+  height: 100px;
+  bottom: 100px;
+  background-color: aqua;
+  margin: auto;
+  z-index: 10;
+}
+.score {
+  width: 100%;
+  height: 60px;
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+}
+#gameArea {
+  position: relative;
+  width: 200px;
+  height: 100%;
+  background: #000;
+  overflow: hidden;
+  margin: auto;
+}
+.line {
+  position: absolute;
+  width: 10px;
+  height: 100px;
+  background-color: #fff;
+  margin: auto;
+  right: 0;
+  left: 0;
+}

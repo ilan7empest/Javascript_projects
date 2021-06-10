@@ -1,0 +1,18 @@
+.copyMe {
+  display: inline-block;
+  border: 1px solid #000;
+  padding: 15px;
+  position: absolute;
+  width: 100%;
+  max-width: 60px;
+  height: 40px;
+  cursor: pointer;
+}
+#bin {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  top: 200px;
+  left: 30%;
+}

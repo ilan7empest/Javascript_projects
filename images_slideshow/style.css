@@ -1,0 +1,54 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+.slideContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 30%;
+  height: 60%;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+.slide {
+  position: relative;
+  flex: 0 0 100%;
+  transition: opacity 0.5s ease;
+}
+.slide.fade {
+  display: none;
+  opacity: 0;
+}
+.slide.active {
+  display: block;
+  opacity: 1;
+}
+
+.slideContainer img {
+  width: 100%;
+  height: 100%;
+}
+.indicator {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 10px;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+.dot {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: #ccc;
+  cursor: pointer;
+}
+.caption {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
