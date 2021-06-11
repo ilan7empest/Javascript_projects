@@ -1,0 +1,39 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+.score {
+}
+.gameArea {
+  width: 600px;
+  height: 300px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  position: relative;
+}
+.box {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: crimson;
+  color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.square {
+  position: relative;
+  width: 98px;
+  height: 98px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.active {
+  background-color: darkcyan;
+}

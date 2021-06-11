@@ -23,8 +23,8 @@ class Game {
 
   _events() {
     this.#startScreen.addEventListener('click', this.startGame.bind(this));
-    window.addEventListener('keydown', this.#handleKeyDown.bind(this));
-    window.addEventListener('keyup', this.#handleKeyUp.bind(this));
+    document.addEventListener('keydown', this.#handleKeyDown.bind(this));
+    document.addEventListener('keyup', this.#handleKeyUp.bind(this));
   }
 
   startGame(e) {
