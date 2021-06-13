@@ -1,0 +1,37 @@
+.myCalc {
+  width: 350px;
+  height: 350px;
+  background-color: dimgray;
+  padding: 5px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: stretch;
+}
+.output {
+  line-height: 40px;
+  background-color: #fff;
+  color: #000;
+  height: 40px;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  text-align: right;
+  font-family: monospace;
+  padding: 0 8px;
+}
+.row {
+  display: flex;
+  flex-flow: row nowrap;
+  flex: 0 0 20%;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 7px;
+  margin: 3px;
+  background-color: azure;
+  cursor: pointer;
+  font-family: monospace;
+  font-size: 2rem;
+}
