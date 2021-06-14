@@ -1,0 +1,24 @@
+.form {
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: monospace;
+  width: 300px;
+}
+.form_field {
+  margin-bottom: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.form_field > * {
+  flex: 0 1 auto;
+}
+#output {
+  display: block;
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 300px;
+  padding: 10px;
+  text-align: left;
+  margin-top: 10px;
+}

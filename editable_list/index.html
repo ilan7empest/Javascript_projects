@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      table {
+        min-width: 300px;
+      }
+      td:first-child {
+        min-width: 200px;
+      }
+      span {
+        color: red;
+        cursor: pointer;
+        margin-right: 5px;
+      }
+    </style>
+    <title>Editable List</title>
+  </head>
+  <body>
+    <h3>My List</h3>
+    <div>
+      <input type="text" id="spItem" />
+      <button id="addBtn">Add item</button>
+    </div>
+    <div id="spList"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Image Placeholder Generator</title>
+  </head>
+  <body>
+    <div class="form">
+      <div class="form_field">
+        <label for="imgSize">Image Size:</label>
+        <select id="imgSize">
+          <option value="650x350">Large</option>
+          <option value="350x150">Medium</option>
+          <option value="150x50" selected>Small</option>
+          <option value="custom">Custom</option>
+        </select>
+      </div>
+      <div class="form_field">
+        <label for="imgText">Image Text:</label>
+        <input id="imgText" placeholder="Image Text:" />
+      </div>
+      <div class="form_field">
+        <label for="imgBgColor">Background Color:</label>
+        <input id="imgBgColor" type="color" />
+      </div>
+      <div class="form_field">
+        <label for="imgTextColor">Text Color:</label>
+        <input id="imgTextColor" type="color" />
+      </div>
+    </div>
+    <img id="previewImg" src="https://via.placeholder.com/150x50" />
+    <textarea id="output">https://via.placeholder.com/150x50</textarea>
+    <script src="script.js"></script>
+  </body>
+</html>
