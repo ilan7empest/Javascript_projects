@@ -1,0 +1,11 @@
+.container {
+  padding-top: 5%;
+}
+.ui.form .field small {
+  display: none;
+  color: #9f3a38;
+  padding-top: 3px;
+}
+.ui.form .field.error small {
+  display: block;
+}

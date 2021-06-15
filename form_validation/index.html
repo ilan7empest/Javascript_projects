@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <div class="ui container">
+      <form class="ui form" name="myForm">
+        <div class="field">
+          <label>Email</label>
+          <input type="email" name="email" placeholder="example@test.com" />
+          <small class="error"></small>
+        </div>
+        <div class="field">
+          <label>Password</label>
+          <input type="password" name="password" placeholder="Password" />
+          <small class="error"></small>
+        </div>
+        <div class="field">
+          <label>User Name</label>
+          <input type="text" name="username" placeholder="User Name" />
+          <small class="error"></small>
+        </div>
+        <button class="ui button" type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
