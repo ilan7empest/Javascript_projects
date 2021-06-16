@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Cookies</title>
+  </head>
+  <body>
+    <div class="container ui">
+      <form name="cookieForm" class="ui form">
+        <div class="field">
+          <label>Cookie Name</label>
+          <input type="text" name="cookieName" value="testName" />
+        </div>
+        <div class="field">
+          <label>Cookie Value</label>
+          <input type="text" name="cookieValue" value="test Value" />
+        </div>
+        <div class="field">
+          <label>Cookie Experation</label>
+          <input type="date" name="cookieExpiration" />
+        </div>
+        <div>
+          <button id="set" class="ui button" type="submit">Set Cookie</button>
+          <button id="get" class="ui button" type="submit">Get Cookie</button>
+          <button id="delete" class="ui button" type="submit">
+            Delete Cookie
+          </button>
+          <button id="all" class="ui button" type="submit">
+            Get All Cookies
+          </button>
+        </div>
+      </form>
+      <hr />
+      <div id="output"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
