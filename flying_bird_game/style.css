@@ -1,0 +1,69 @@
+html,
+body,
+#root,
+#game {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: cursive;
+  overflow: hidden;
+}
+#gameArea {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: skyblue;
+  margin: 0 auto;
+}
+.score {
+  position: absolute;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.4rem;
+  z-index: 20;
+}
+.bird {
+  background-image: url('bird.png');
+  width: 50px;
+  height: 40px;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+.wing {
+  width: 25px;
+  height: 12px;
+  background-color: gold;
+  border-radius: 0 15px 10px;
+  box-shadow: 0px 2px 3px #a98f07;
+  transform: skewY(0deg);
+  transform-origin: bottom right;
+  position: absolute;
+  top: 15px;
+  left: -3px;
+}
+.bird.flap .wing {
+  transform: skewY(15deg);
+}
+.startScreen {
+  position: absolute;
+  top: 100px;
+  left: 25%;
+  width: 50%;
+  background-color: burlywood;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.5rem;
+  z-index: 1;
+  cursor: pointer;
+}
+.pipe {
+  text-align: center;
+}
+.hide {
+  display: none;
+}
