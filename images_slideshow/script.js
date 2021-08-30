@@ -76,7 +76,6 @@ class Slideshow {
   }
 
   _playSlide() {
-    console.log('sadsad');
     const slides = document.querySelectorAll('.slide');
     const dots = document.querySelectorAll('.dot');
     if (this.state.slideIdx > slides.length - 1) {
