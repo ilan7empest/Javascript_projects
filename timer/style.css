@@ -1,0 +1,45 @@
+.timer {
+  position: relative;
+  width: 400px;
+}
+.controls {
+  position: absolute;
+  top: 130px;
+  left: 100px;
+}
+.controls > div > * {
+  cursor: pointer;
+}
+.controls > div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.border {
+  transform: rotateZ(-90deg);
+}
+button {
+  border: none;
+  background: transparent;
+}
+button i {
+  font-size: 2rem;
+  color: yellowgreen;
+}
+input {
+  border: none;
+  font-size: 4rem;
+  max-width: 200px;
+  outline: none;
+  text-align: center;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
