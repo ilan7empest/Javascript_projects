@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
     <link
       rel="stylesheet"
@@ -25,7 +28,22 @@
         </div>
       </div>
     </section>
-    <div class="container"></div>
-    <script src="index.js"></script>
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <div id="left-autocomplete"></div>
+          <div id="left-summary"></div>
+        </div>
+        <div class="column">
+          <div id="right-autocomplete"></div>
+          <div id="right-summary"></div>
+        </div>
+      </div>
+      <div class="column is-half notification is-primary tutorial">
+        <h1 class="title">SEARCH FOR A MOVIE ON BOTH SIDES</h1>
+        <p class="subtitle">See who is BEST!</p>
+      </div>
+    </div>
+    <script src="index.js" type="module"></script>
   </body>
 </html>
