@@ -1,7 +1,5 @@
 import Autocomplete from '../components/autocomplete.js';
-
-const MOVIES_API_KEY = 'cfff9dc8';
-const movies_base_url = 'http://www.omdbapi.com/';
+import Keys from '../_development.keys.js';
 
 /**
  * Async Function to fetch data based on a search term
@@ -13,7 +11,7 @@ const fetchMovieData = async (searchStr = '') => {
   const isIMDB = searchStr.includes('tt');
   try {
     const { data } = await axios(
-      `${movies_base_url}?apikey=${MOVIES_API_KEY}&${
+      `${Keys.MOVIES_BASE_URL}?apikey=${Keys.MOVIES_API_KEY}&${
         isIMDB ? 'i' : 's'
       }=${searchStr}`
     );

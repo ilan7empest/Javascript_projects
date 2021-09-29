@@ -1,13 +1,12 @@
 import Autocomplete from '../components/autocomplete.js';
 
-const POSITION_API_KEY = 'b1c5e81d56b7d298a8938218560895d3';
-const position_base_url = 'http://api.positionstack.com/v1/forward';
+import Keys from '../_development.keys.js';
 
 const fetchPositionData = async (searchStr = '') => {
   try {
-    const { data } = await axios(position_base_url, {
+    const { data } = await axios(Keys.POSITION_BASE_URL, {
       params: {
-        access_key: POSITION_API_KEY,
+        access_key: Keys.POSITION_API_KEY,
         query: searchStr,
       },
     });
